@@ -1,5 +1,5 @@
 const initialState = {
-  list: [1,2,3]
+  list: []
 }
 
 const todos = (state = initialState, action) => {
@@ -13,11 +13,14 @@ const todos = (state = initialState, action) => {
       return Object.assign({
         list: state.list.splice(1)
       })
+    case 'SET_ARRAY':
+      return Object.assign({
+        list: action.inputString.split('')
+      })
     default:
       return state
   }
 }
-
 
 export const getList = function(state = initialState){
     return state.todos.list;

@@ -33,7 +33,6 @@ class AddTodo extends React.Component {
       this.textInput = input;
     }
 
-
     deleteElement(){
       this.props.deleteElementFromArray(this.textInput.value);
     }
