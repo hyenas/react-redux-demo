@@ -1,2 +1,1 @@
-1,npm install
-2,npm start
+https://pro.ant.design/docs/getting-started-cn
